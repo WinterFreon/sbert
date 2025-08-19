@@ -17,7 +17,7 @@ and **extends it** with new experiments on pooling strategies and training dynam
 ---
 
 ## 📁 Project Structure
-### sentence-bert-project
+### sbert-main
 - **model/**
   - `sentence_bert.py` — base architecture
   - `objectives.py`
