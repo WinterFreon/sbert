@@ -30,7 +30,7 @@ and **extends it** with new experiments on pooling strategies and training dynam
 - `config.py` 
 - `requirements.txt`
   
-### sbert-addition
+### sbert-pooling
 - **model/**
   - `sentence_bert.py` 
   - `objectives.py`
@@ -94,7 +94,7 @@ Spearman correlation on STS Benchmark (test): 0.8134
 ```bash
 - `evaluate_senteval.py`
 ```
-### sbert-addition
+### sbert-pooling
 - Step 0:  Train NLI model
 ```bash
 - !python train.py --pooling mean #max,cls,mean+max
@@ -124,7 +124,7 @@ Results are automatically saved to JSON (sts_results.json, senteval_results.json
 | SentEval SUBJ  | Accuracy | 0.9131 |
 | SentEval SST-2 | Accuracy | 0.8696 |
 | SentEval MRPC  | Accuracy | 0.7139 |
-### sbert-addition
+### sbert-pooling
 STS12/STS13/STS-B (Spearman ρ)
 | Pooling  | STS12  | STS13  | STS-B  | Avg    |
 | -------- | ------ | ------ | ------ | ------ |
