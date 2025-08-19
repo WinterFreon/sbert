@@ -151,6 +151,6 @@ SentEval (Accuracy)
 - Extended training monitoring shows:more epochs → lower loss but plateau/fluctuating validation accuracy → confirms risk of overfitting.
 
 
-## 🙌 Acknowledgements
+## Acknowledgements
 This project replicates the work of:
 Sentence-BERT: Sentence Embeddings using Siamese BERT-Networks by Nils Reimers and Iryna Gurevych
