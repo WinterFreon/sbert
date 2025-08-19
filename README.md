@@ -31,17 +31,16 @@ and **extends it** with new experiments on pooling strategies and training dynam
 - `requirements.txt`
   
 ### sbert-pooling
-- **model/**
-  - `sentence_bert.py` 
-  - `objectives.py`
+- **model-pooling/**
+  - `sentence_bert_pooling.py` 
+  - `objectives_pooling.py`
 - **data/**
   - `dataset.py` 
-- `train.py`
-- `train_regression.py`
+- `train_pooling.py`
 - `train_regression_all_pooling.py`
 - `evaluate_sts_.py` 
 - `evaluate_senteval_.py` 
-- `config.py` 
+- `config_pooling.py` 
 
 ---
 
@@ -97,12 +96,12 @@ Spearman correlation on STS Benchmark (test): 0.8134
 ### sbert-pooling
 - Step 0:  Train NLI model
 ```bash
-- !python train.py --pooling mean #max,cls,mean+max
+- !python train_pooling.py --pooling mean # max,cls,mean+max
 ```
 This produces: my_best_sbert_model_{pooling}.pth
 - Step 1: Fine-tune on STS-B regression
 ```bash
-- !python train_regression.py
+- !python train_regression_all_pooling.py
 ```
 This produces: sbert_regression_{pooling}.pth
 - Step 2: Evaluate
