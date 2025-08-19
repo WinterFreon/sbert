@@ -62,7 +62,7 @@ def main():
     tokenizer = model.tokenizer
     model.load_state_dict(torch.load("my_best_sbert_model.pth", map_location=device))
 
-    # ✅ print weight std before train
+    # print weight std before train
     print("🔍 Before training - encoder layer[0] weight std:", model.bert.encoder.layer[0].intermediate.dense.weight.std().item())
 
     train_data = load_sts_dataset("train")
@@ -101,11 +101,11 @@ def main():
             "val_spearman": spearman
         })
 
-    # ✅ save encoder-only model（for STS similarity assessment）
+    # save encoder-only model（for STS similarity assessment）
     torch.save(model.state_dict(), "sbert_regression_encoder_only.pth")
     print("✅ Encoder-only model saved as sbert_regression_encoder_only.pth")
 
-    # ✅ print weight again std（make sure whether update）
+    # print weight again std（make sure whether update）
     print("🔍 After training - encoder layer[0] weight std:", model.bert.encoder.layer[0].intermediate.dense.weight.std().item())
 
     wandb.finish()
