@@ -24,8 +24,7 @@ and **extends it** with new experiments on pooling strategies and training dynam
 - **data/**
   - `dataset.py` 
 - `train.py` 
-- `train_regression.py` 
-- `train_regression2.py` — Save encoder-only model
+- `train_regression.py` — Save encoder-only model
 - `evaluate_all_sts.py` — Evaluate on STS Benchmark
 - `evaluate_senteval.py` — Evaluate on SentEval Evaluation
 - `config.py` 
