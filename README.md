@@ -67,7 +67,7 @@ pip install -r requirements.txt
 ---
 
 ## 📘 Steps
-### sentence-bert-project
+### sbert-main
 - Step 0: Build from 'bert-base-uncased'
 ```bash
 - `sentence_bert.py`
